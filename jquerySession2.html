@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#div1{
+    background-color: red;
+    width: 250px;
+    height: 250px;
+}
+#div2{
+    background-color: aqua;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+#div3{
+    background-color: blueviolet;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+<div id="div1"></div><br>
+<button id="FadeOut">fade out</button> |
+<button id="FadeIn">fade In</button> |
+<button id="FadeToggle">fade toggle</button> |
+<button id="FadeTo">fade to</button><br><br><br>
+
+<div id="div2">click to slide</div>
+<div id="div3"><img src="https://cdn.britannica.com/35/238335-050-2CB2EB8A/Lionel-Messi-Argentina-Netherlands-World-Cup-Qatar-2022.jpg" alt="" width="280px" height="auto">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero, iusto? Aliquid omnis dolor asperiores quia quod inventore, pariatur temporibus dolore totam tenetur hic eveniet praesentium, sint minima enim nulla iste.
+</div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script>
+$(document).ready(function(){
+
+$('#FadeOut').click(function(){
+$('#div1').fadeOut(1000);
+})
+
+$('#FadeIn').click(function(){
+$('#div1').fadeIn(1000);
+})
+
+$('#FadeToggle').click(function(){
+$('#div1').fadeToggle(1000);
+})
+
+$('#FadeTo').click(function(){
+$('#div1').fadeTo(1000,0.5);
+})
+
+$('#div2').click(function(){
+$('#div3').slideToggle(2000);
+})
+
+})
+
+
+
+    </script>
+</body>
+</html>
