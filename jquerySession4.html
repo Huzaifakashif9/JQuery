@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=img, initial-scale=1.0">
+    <title>OFF/ON BULB</title>
+    <style>
+        #off{
+            background-color: burlywood;
+        }
+        #off:hover{
+            background-color: blue;
+        }
+        #on{
+            background-color: burlywood;
+        }
+        #on:hover{
+            background-color:  blue;
+        }
+    </style>
+    
+</head>
+<body>
+    <img src="off.png.jpg" alt="off bulb" id="bulb" style="margin: 50px;"><br><br><br>
+    <button id="off"style="margin-left: 100px;">OFF</button>&nbsp;&nbsp;&nbsp;||&nbsp;&nbsp;
+    <button id="on" style="margin-left: 5px;">ON</button>
+    <SCript src="https://code.jquery.com/jquery-3.7.1.js"></SCript>
+<script>
+$(document).ready(function(){
+
+$('#on').click(function(){
+    $('#bulb').attr('src','on.png')
+    $('body').css('background-color','black')
+    
+})
+$('#off').click(function(){
+    $('#bulb').attr('src','off.png.jpg')
+    $('body').css('background-color','white')
+})
+
+})
+
+
+</script>
+
+</body>
+</html>
