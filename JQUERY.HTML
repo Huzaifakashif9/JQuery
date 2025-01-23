@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+#changetexxxt{
+    padding: 20px;
+    margin: 40px;
+}
+#myid{
+    background-color: black;
+    width: 200px;
+    height: 200px;
+}
+
+    </style>
+</head>
+<body>
+    <h1 id="myhead">ao jquery parhein</h1>
+    <button style="width: 100px;" id="changetext">hide</button> ||
+    <button style="width: 100px;" id="changetexxt">show</button><br> <hr>
+    <h1 id="mybody">hello</h1>
+    <button style="width: 100px;" id="changetexxxt">toogle</button><br><hr>
+    
+    <div id="myid">  
+    </div><br><br>
+    <button style="width: 100px;" id="changecolour"> changecolour </button>||
+    <button style="width: 100px;" id="changeborder"> changeborder </button>||
+    <button style="width: 100px;" id="changeborder2"> changeboth </button>
+<!-- 
+    1) CDN LINK TO ADD IT
+    
+    2)  $('SELECTOR').ACTION;
+    
+    .)   $ ('#MYID').HIDE; -->
+
+    
+    <SCript src="https://code.jquery.com/jquery-3.7.1.js"></SCript>
+
+<SCript>
+    $(document).ready(function(){
+$('#changetext').click(function(){
+    $('#myhead').hide(1000);
+})
+    })
+    $(document).ready(function(){
+$('#changetexxt').click(function(){
+    $('#myhead').show(1000);
+})
+    })
+    $(document).ready(function(){
+$('#changetexxxt').click(function(){
+    $('#mybody').toggle(1000);
+})
+$('#changecolour').click(function(){
+    $('#myid').css('background-color','red');
+})
+$('#changeborder').click(function(){
+    $('#myid').css('border-radius','100px');
+})
+$('#changeborder2').click(function(){
+    $('#myid').css('border-radius','50px');
+    $('#myid').css('background-color','yellow');
+})
+    })
+</SCript>
+</body>
+</html>
